@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SimpleTable
 //
-//  Created by Yeni Hwang on 2021/06/17.
+//  Created by Yeni on 2021/06/17.
 //
 
 import UIKit
