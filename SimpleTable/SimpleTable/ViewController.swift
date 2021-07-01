@@ -132,4 +132,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         return "날짜 로그"
     }
+    
+    
+    
+    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    
+        // segue의 다음 뷰 컨트롤러를 세컨드 뷰 컨트롤러로 캐스팅. 캐스팅이 안되면 관둔다 (return)
+        guard let nextViewController: SecondViewController = segue.destination as? SecondViewController else {
+            return
+        }
+        
+        guard let cell: UITableViewCell = sender as? UITableViewCell else {
+            return
+        }
+    
+        // 넥스트 뷰 컨트롤러의 textToSet에 셀의 텍스트가 보이도록
+        // 아직은 직접 넘겨주기 못하기 때문에 프로퍼티로 세팅을 해준 후 넘겨주기
+        nextViewController.textToSet = cell.textLabel?.text
+        
+        // nextViewController.textLabel.text = cell.textLabel?.text textLabel이 아직 만들어져있지 않기 때문에 exception 발생
+    
+    }
+    
+    
 }
