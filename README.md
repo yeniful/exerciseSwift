@@ -1,5 +1,5 @@
 # exerciseSwift
-to practice and to understand Swift language and iOS app
+Swift와 iOS를 공부하기 위한 예제 구현입니다.
 
 
 ### ImagePicker
