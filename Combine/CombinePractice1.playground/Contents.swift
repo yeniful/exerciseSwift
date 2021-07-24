@@ -66,6 +66,7 @@ class CustomSubscriber: Subscriber{
         // 이 경우 모든 데이터가 발행되지 않았기 때문에 completion는 호출되지 않습니다.
     }
     
+    // 구독 이후 데이터 스트림을 변경할 때 사용 .none 리턴은 현재 스트림을 유지한다는 뜻
     func receive(_ input: String) -> Subscribers.Demand {
         print("데이터를 받았습니다.", input)
         return .none
@@ -73,6 +74,16 @@ class CustomSubscriber: Subscriber{
 
 }
 
-let publisher = ["A","B","C","D","E","F","G"].publisher
-let subscriber = CustomSubscriber()
-publisher.subscribe(subscriber)
+let publisher1 = ["A","B","C","D","E","F","G"].publisher
+let subscriber1 = CustomSubscriber()
+publisher1.subscribe(subscriber1)
+
+
+// [EXERCISE #4]
+// Operator
+// Publsiher가 String타입이 아닌 Int타입이라면 서로 받는 타입이 달라 에러 발생
+/*
+let publisher2 = (1...10).publisher
+let subscriber2 = CustomSubscriber()
+publisher2.subscribe(subscriber2)
+*/
