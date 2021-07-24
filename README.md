@@ -1,5 +1,5 @@
 # exerciseSwift
-Swift와 iOS를 공부하기 위한 예제 구현입니다.
+Swift와 iOS를 공부하기 위한 연습 코드와 예제 구현입니다.
 
 
 ### Combine
@@ -44,3 +44,7 @@ Swift와 iOS를 공부하기 위한 예제 구현입니다.
 ### ViewTransition2
 - 부스트코스 [ios 앱 프로그래밍] by.yagom
 - Singleton Design Pattern
+
+### TimeInterval
+- startDate와 endDate의 시차(timeDifference)에 따라 case를 나누고, case에 따라 message를 다르게 return 
+- DateFormatter, Calendar.dateComponents
