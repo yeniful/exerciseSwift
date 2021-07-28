@@ -70,7 +70,7 @@ class Server{
 var viewModel = ViewModel()         // output : 초기 title
 
 // 7초 뒤 실행 (5초 이하로 지정시 getTitle의 지연 시간과 맞물려 ouput이 변경된 title로 나옴)
-sleep(4)
+sleep(6)
 
 Server.title = "변경된 title"
 viewModel.webService.getTitle()     // output : 변경된 title
