@@ -55,7 +55,3 @@ var dooh = Person(name: "dooh", job: nil, birthDay: Person.BirthDay(year: 2002, 
 dooh.eat()
 dooh.sleep()
 dooh.work()
-
-
-// Class는 init 필수x
-// Struct는 init 필수
