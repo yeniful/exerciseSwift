@@ -25,6 +25,12 @@ Swift와 iOS를 공부하기 위한 연습 코드와 예제 구현입니다.
 - Jason
 - Codable
 
+### OOP
+- 객체지향 프로그래밍 연습
+- Struct, Class
+- Enum
+- Optional Binding
+
 ### SimpleTable 
 - 부스트코스 [ios 앱 프로그래밍] by.yagom
 - Table View
