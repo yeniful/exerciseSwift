@@ -20,6 +20,10 @@ Swift와 iOS를 공부하기 위한 연습 코드와 예제 구현입니다.
 - Date Formatter
 - Target-Action Design Pattern
 
+### MyTableView
+- 부스트코스 [ios 앱 프로그래밍] TableView 예제 by.yagom
+- Jason Decoder를 통해 에셋의 Json 데이터 사용
+
 ### MyFriends
 - 부스트코스 [ios 앱 프로그래밍] 친구들의 목록을 보여주는 Table View by.yagom
 - Jason
